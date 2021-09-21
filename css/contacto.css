@@ -1,0 +1,11 @@
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    border: 2px black solid;
+    padding: 3%;
+    margin-top: 1%;
+    width: 50%;
+}
