@@ -3,9 +3,32 @@ body{
     justify-content: center;
 }
 
-header{
+/* header{
     border: 2px black solid;
     padding: 3%;
     margin-top: 1%;
     width: 50%;
+} */
+
+.padre{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+    .bloque1{
+        border: 2px black solid;
+        padding: 4%;
+        
+    }
+    
+    .bloque2{
+        border: 2px black solid;
+        padding: 4%;
+    }
+
+@media (min-width: 720px){
+    .padre{
+        grid-template-columns: auto;
+    }
 }
