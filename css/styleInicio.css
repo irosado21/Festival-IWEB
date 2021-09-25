@@ -1,3 +1,4 @@
+/*-----------------------------------DEFAULT-------------------------------------*/
 body{
     margin: 0;
     background-color: black;
@@ -11,12 +12,17 @@ body{
         position: relative;
         align-items: center;
     }
+
+        #navpop{
+            display: none;
+        }
+
         .navbutton{
             height: 2vw;
             width: 8vw;
             background-color: rgb(35, 76, 87);
         }
-        .navbutton:hover, #logo:hover, .new{
+        .navbutton:hover, #logo:hover, .new, .navbutton2:hover, #navpop:hover{
             cursor: pointer;
         }
 
@@ -25,6 +31,24 @@ body{
             width: 25vw;
             background-color: rgb(63, 84, 90);
         }
+
+        #navbar2{
+            height: auto;
+            background-color: rgb(124, 176, 189);
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            
+            padding: 1vw;
+            display: none;
+        }
+
+            .navbutton2{
+                margin: 1vw;             
+                height: 2vw;
+                width: 24vw;
+                background-color: rgb(35, 76, 87);
+            }
 
 
     #carousel{
@@ -104,9 +128,52 @@ body{
         height: 20vw;
         background-color: rgb(4, 59, 59);
     }
+/*-----------------------------------DEFAULT-------------------------------------*/
 
 
+
+
+
+
+/*------------------------CLOSE NAVBAR2 IF DISPLAY=BLOCK--------------------------*/
+@media (min-width: 721px) {
+    #navbar2 {
+        display: none !important;
+    }
+}
+/*------------------------CLOSE NAVBAR2 IF DISPLAY=BLOCK--------------------------*/
+    
+
+
+
+
+
+/*------------------------TABLET-VIEW--------------------------*/
 @media (max-width: 720px) {
+
+    #navbar2{
+        display: none;    
+    }
+    
+    .navbutton{
+        display: none;
+    }
+
+    #navbar{
+        padding: 2vw;
+        justify-content:space-between ;
+    }
+
+    #navpop{
+        display: initial;
+    }
+
+    .pop{
+        width: 7vw;
+        height: 1vw;
+        background-color: black;
+        margin: 1vw 0;
+    }
 
     #gallery{
         margin: 1vw;
@@ -180,11 +247,15 @@ body{
         background-color: rgb(133, 180, 192);
         height: 50vw;
     }
-
 }
+/*------------------------TABLET-VIEW--------------------------*/
 
 
 
+
+
+
+/*------------------------PHONE-VIEW--------------------------*/
 @media (max-width: 340px) {
 
     #gallery{
@@ -229,9 +300,13 @@ body{
             background-color: rgb(14, 194, 194);
             grid-column: 1 / 5;
             grid-row: 9 / 11;
-        }
-    
+        }  
 }
+/*------------------------PHONE-VIEW--------------------------*/
+
+
+
+
 
 
 
