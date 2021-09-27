@@ -1,14 +1,77 @@
 body{
     align-items: center;
     justify-content: center;
+    margin: 0;
+    background-color: #52006A;
 }
 
-/* header{
-    border: 2px black solid;
-    padding: 3%;
-    margin-top: 1%;
-    width: 50%;
-} */
+#navbar{
+    height: 10vw;
+    background-color: #CD113B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+    #navpop{
+        display: none;
+    }
+
+    .navbutton{
+        text-align: center;
+        height: 2vw;
+        width: auto;
+        color: #FFA900;
+        font-size: 1.8vw;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .navbutton:hover, .navbutton2:hover{
+        background-color: #52006A;
+        border-radius: 5vw;
+    }
+
+    .navbutton:hover, #logo:hover, .new, .navbutton2:hover, #navpop:hover{
+        cursor: pointer;
+    }
+
+    #logo{
+        border-radius: 5vw;           
+        height: 8vw;
+        width: 25vw;
+        background-color: #FF7600;
+    }
+        #logo img{
+            margin-left: 4%;
+            width: 90%;
+        }
+
+    #navbar2{
+        height: auto;
+        background-color:#CD113B;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        padding: 1vw;
+        display: none;
+    }
+
+        .navbutton2{
+            margin: 1vw;             
+            height: auto;
+            width: auto;
+            color: #FFA900;
+            font-size: 3vw;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
 
 .padre{
     display: grid;
