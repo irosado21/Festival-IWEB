@@ -2,8 +2,13 @@ body {
     text-align: center;
 }
 
+header {
+    border: 2px solid black;
+}
+
 #content {
     border: 2px solid black;
+    margin-top: 20px;
 
     display: grid;
     grid-template-columns: auto 200px;
@@ -12,15 +17,42 @@ body {
     
 }
 
+/*CONTENIDO BLOCK 01*/
+
 #content #c1{
    border: 2px solid black;
-   height: 200px;
 }
+
+    #list {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 20px;
+        border: 1px solid black;
+
+
+    }
+
+        #list img {
+            width: 100%;
+            max-height: 200px;
+            height: auto;
+        }
+
+    .listInfo {
+        display: none;
+    }
+
+/*CONTENIDO BLOCK 01 CIERRE*/
+
+/*CONTENIDO BLOCK 02*/
 
 #content #c2{
     border: 2px solid black;
-    height: 200px;
 }
+
+/*CONTENIDO BLOCK 02 CIERRE*/
+
+
 /*@MEDIA*/
 
 @media only screen and (max-width: 720px) {
