@@ -29,6 +29,10 @@ body{
             font-family: 'Courier New', Courier, monospace;
         }
 
+        a{
+            text-decoration: none;
+        }
+
         .navbutton:hover, .navbutton2:hover{
             background-color: #52006A;
             border-radius: 10vw;
@@ -122,6 +126,23 @@ body{
         justify-content: center;
     }
 
+        #titlenot{
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            font-size: 2.5vw;
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            padding-top: 2vw;
+        }
+
+        #bannergif{
+            height: 10vw;
+            width: 100%;
+            background-image: url("https://madcoolfestival.es/images/banners/Banner-Vibra-Mahou.gif");
+            background-size: cover;
+        }
 
         .new{
             margin: 2vw;
@@ -151,7 +172,20 @@ body{
             background-size: cover;
         }
     
+    #titlegal{
+        text-align: center;
+        color: white;
+        background-color: #FFA900;
+        font-weight: bold;
+        font-size: 2.5vw;
+        font-family:'Courier New', Courier, monospace;
+        margin: 1vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin-bottom: -1vw;
+    }
     
+
     #gallery{
         margin: 1vw;
         background-color:#FFA900;
