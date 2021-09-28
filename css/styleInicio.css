@@ -60,8 +60,8 @@ body{
             flex-direction: column;
             justify-content: space-around;
             position: relative;
-            border-top-left-radius: 5vw;
-            border-top-right-radius: 5vw;
+            border-bottom-left-radius: 5vw;
+            border-bottom-right-radius: 5vw;
             padding: 1vw;
             display: none;
         }
@@ -268,9 +268,13 @@ body{
         display: none;
     }
 
+    .a1{
+        display: none;
+    }
+
     #navbar{
         padding: 2vw;
-        justify-content:space-between ;
+        justify-content:space-between;
     }
 
     #navpop{
