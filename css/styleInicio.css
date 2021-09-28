@@ -77,7 +77,39 @@ body{
         margin: 1vw;
         background-color: #FF7600;
         height: 30vw;
+        background-image: url("https://madcoolfestival.es/images/noticias/no_137.jpg");
+        background-position-x: -1.5vw; 
+        background-position-y: -18vw; 
+        background-size: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+        #butentradas{
+            width: 20vw;
+            background-color: #FFA900;
+            height: 6vw;
+            margin-top: 18vw;
+            margin-right: 2vw;
+            border-radius: 3vw;
+            text-align: center; 
+            border: 5px solid #FF7600;           
+        }
+
+        #butentradas:hover{
+            cursor: pointer;
+            opacity: 70%;
+        }
+            #entradas{
+                margin-top: 1.8vw;
+                color: rgba(255, 255, 255, 0.774);
+                font-weight: bold;
+                font-size: 2.5vw;
+                font-family:'Courier New', Courier, monospace;
+                
+            }
 
     #news{
         margin: 1vw;
@@ -97,6 +129,26 @@ body{
             height: 25vw;
             width: calc(50% - 2px - 4vw);
             background-color:#FFA900;
+        }
+
+        #new1{
+            background-image: url("https://madcoolfestival.es/images/noticias/no_139_thumb.jpg");
+            background-size: cover;
+        }
+
+        #new2{
+            background-image: url("https://madcoolfestival.es/images/noticias/no_136_thumb.jpg");
+            background-size: cover;
+        }
+
+        #new3{
+            background-image: url("https://madcoolfestival.es/images/noticias/no_135_thumb.png");
+            background-size: cover;
+        }
+
+        #new4{
+            background-image: url("https://madcoolfestival.es/images/noticias/no_134_thumb.jpg");
+            background-size: cover;
         }
     
     
@@ -268,7 +320,7 @@ body{
     #carousel{
         margin: 1vw;
         background-color: #FF7600;
-        height: 50vw;
+        height: 35vw;
     }
 }
 /*------------------------TABLET-VIEW--------------------------*/
