@@ -62,8 +62,8 @@ body{
         flex-direction: column;
         justify-content: space-around;
         position: relative;
-        border-top-left-radius: 5vw;
-        border-top-right-radius: 5vw;
+        border-bottom-left-radius: 5vw;
+        border-bottom-right-radius: 5vw;
         padding: 1vw;
         display: none;
     }
@@ -151,6 +151,30 @@ body{
 
     .bloque2{
         margin-top: 0px;
+    }
+
+    #navbar2{
+        display: none;    
+    }
+    
+    .navbutton{
+        display: none;
+    }
+
+    #navbar{
+        padding: 2vw;
+        justify-content:space-between ;
+    }
+
+    #navpop{
+        display: initial;
+    }
+
+    .pop{
+        width: 7vw;
+        height: 1vw;
+        background-color: black;
+        margin: 1vw 0;
     }
 }
 
