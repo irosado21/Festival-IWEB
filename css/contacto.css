@@ -155,8 +155,9 @@ body{
     .bloque1{
         margin-top: 22%;
         height: auto;
-        overflow-y:scroll;
+        overflow-y: scroll;
     }
+
     .bloque1::-webkit-scrollbar{
         display: none;
     }
