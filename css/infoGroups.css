@@ -267,31 +267,28 @@ body{
     padding: 20px 100px;
 
     display: grid;
-    row-gap: 25px;
-    grid-template-columns: auto;
+    row-gap: 50px;
+    grid-auto-rows: 1fr;
+    
     
 }
 /*-----------------------------------CONTENT-------------------------------------*/
 
 /*-----------------------------------CONTENT_X-------------------------------------*/
 .content_x{
-    width: auto;
     background-color: #CD113B;
-    margin-top: 20px;
-
     display: grid;
     grid-template-columns: auto 100px;
     
 }
 
 .content_x:hover>.group>button{
-    display: block;
-    bottom: 10px;
+    visibility: visible;
 }
 
 .content_x:hover>.group>p{
     
-    display: none;
+    visibility: hidden;
 
 }
 
@@ -307,12 +304,10 @@ body{
 
 .content_x img {
     width: 100%;
-    max-height: 300px;
 }
 
 .content_x button {
-    display: none;
-    position: relative;
+    visibility: hidden;
     margin: auto;
     padding: 20px 60px;
     font-size: large;
@@ -352,6 +347,10 @@ body{
 
 @media only screen and (max-width: 720px) {
     
+    .content_x{
+        grid-template-columns: auto auto;
+    }
+
     .content_x p{
         display: none;
     }
