@@ -7,6 +7,8 @@ var lorem = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
 
 /* FIN DATOS */
 
+/* INICIO GENERADOR */
+
 window.addEventListener('DOMContentLoaded', (event) => {
 
     Groups.forEach(function (element,i) {
@@ -14,6 +16,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById("content").innerHTML += "<div class='content_x'>"
                                                      +      "<div class='group'>"
                                                      +          "<img src='/img/Grupos/" + element[0] + ".png' alt='Imagen del Grupo'>"
+                                                     +          "<button onclick='showInfo()'>Show Info</button>"
                                                      +          "<p>" + lorem + "</p>"
                                                      +      "</div>"
                                                      +      "<div class='timeGroup'>"
@@ -21,28 +24,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
                                                      +      "</div>"
                                                      +  "</div>"
 
-       
-        // document.getElementById("Content").closest.img.src = "/img/Grupos/" + element + ".png"
-    });
+  });
 
 })
 
-/*
+/* INICIO GENERADOR FIN */
 
-function iniGen() {
-    imgGroups.forEach(element => {
-        document.getElementById("content").innerHTML += "<img src='/img/Grupos/" + element + ".png' onclick='showInfo(`" + element + "`)' >"
-                                                  +  "<div class='listInfo' data-group='" + element + "' onclick=''> hola   </div>"
-    })
-}
-
-function showInfo(group){
-    Array.from(document.getElementsByClassName("listInfo")).forEach(element => {
-        if (element.dataset.group == group) {
-            element.style.display = "block";
-        }
-    });
-}
-*/
 
 

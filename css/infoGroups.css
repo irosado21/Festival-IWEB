@@ -277,11 +277,25 @@ body{
     width: auto;
     background-color: #CD113B;
     margin-top: 20px;
+    height: auto;
+    max-height: 330px;
 
     display: grid;
     grid-template-columns: auto 100px;
     
 }
+
+.content_x:hover>.group>button{
+    display: block;
+    bottom: 10px;
+}
+
+.content_x:hover>.group>p{
+    
+    display: none;
+
+}
+
 /*-----------------------------------CONTENT_X-------------------------------------*/
 
 
@@ -292,14 +306,30 @@ body{
     border: 2px solid #FF7600;
 }
 
-.content_x p {
-    padding: 10px 100px;
-}
-
 .content_x img {
     width: 100%;
+    max-height: 300px;
 }
 
+.content_x button {
+    display: none;
+    position: relative;
+    margin: auto;
+    padding: 20px 60px;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #FF7600;
+    color: white;
+    border: none;
+}
+
+.content_x button:hover {
+    opacity: 0.7;
+}
+
+.content_x p {
+    padding: 0px 50px;
+}
 /*-----------------------------------CONTENT LISTA GRUPOS-------------------------------------*/
 
 
@@ -323,7 +353,13 @@ body{
 
 @media only screen and (max-width: 720px) {
     
+    .content_x p{
+        display: none;
+    }
 
+  }
+
+  @media only screen and (max-width: 320px) {
 
   }
 
