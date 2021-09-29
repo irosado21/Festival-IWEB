@@ -169,10 +169,17 @@ body{
 @media (max-width: 720px){
     .padre{
         grid-template-columns: auto;
+        height: 975px;
     } 
 
+    .bloque1{
+        margin-top: 5%;
+        height: 85%;
+    }
+
     .bloque2{
-        margin-top: 0px;
+        margin-top: 15%;
+        padding-top: 0%;
     }
 
     #navbar2{
