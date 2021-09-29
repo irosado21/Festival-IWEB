@@ -267,6 +267,7 @@ body{
     padding: 20px 100px;
 
     display: grid;
+    row-gap: 25px;
     grid-template-columns: auto;
     
 }
@@ -277,8 +278,6 @@ body{
     width: auto;
     background-color: #CD113B;
     margin-top: 20px;
-    height: auto;
-    max-height: 330px;
 
     display: grid;
     grid-template-columns: auto 100px;
