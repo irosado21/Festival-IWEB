@@ -5,6 +5,8 @@ body{
     background-color: #52006A;
 }
 
+
+/* MENU DE NAVEGACION Y BANNER*/
 #navbar{
     height: 10vw;
     background-color: #CD113B;
@@ -82,25 +84,23 @@ body{
         margin: 1vw;
         background-color: #FF7600;
         height: 30vw;
-        background-image: url("https://madcoolfestival.es/images/noticias/no_137.jpg");
-        background-position-x: -1.5vw; 
-        background-position-y: -18vw; 
-        background-size: 100vw;
+        background-image: url("../img/Pagina_Principal/Banner\ de\ contacto.png");
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+/* FIN DEL MENU DE NAVEGACION Y BANNER */
 
+/*BLOQUES DE CONTENIDO*/
 .padre{
     display: grid;
     grid-template-columns: 65% auto;
     margin: 1%;
-    /* padding: 10px; */
     background-color: #CD113B;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    /* font-weight: bold; */
     font-size: x-large;
 }
 
@@ -123,7 +123,9 @@ body{
         .bloque2 a{
             color: #FFA900;
         }
-/* tema del mapa */
+/* FIN DE LOS BLOQUES DE CONTENIDO */
+
+/* TEMA DEL MAPA */
 .mapouter {
     position: relative;
     text-align: right;
@@ -141,7 +143,14 @@ body{
 .gmap_iframe {
     height: 400px !important;
 }
+/*FIN DEL MAPA*/
 
+/* MEDIA PARA QUE SEA RESPONSIVE Y TODO SE VEA BIEN CUANDO SE REDUCE*/
+@media (max-width: 1245px){
+    .padre{
+        grid-template-columns: 40% auto;
+    }
+}
 
 
 @media (max-width: 720px){
@@ -177,6 +186,7 @@ body{
         margin: 1vw 0;
     }
 }
+/* FIN DE LOS MEDIA */
 
 /* BLOQUE PARA EL MENU PEQUEÑO */
 @media (min-width: 721px) {
@@ -184,3 +194,4 @@ body{
         display: none !important;
     }
 }
+/* FIN DEL MENU PEQUEÑO */
