@@ -421,6 +421,22 @@ body{
         background-color: #FF7600;
         height: 35vw;
     }
+
+
+    #finfo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+        #fabout{
+            padding: 2vw;
+            width: auto;
+        }
+        #patrocinadores{
+            padding: 1vw;
+            width: auto;
+        }
+
 }
 /*------------------------TABLET-VIEW--------------------------*/
 
