@@ -2,6 +2,7 @@
 body{
     margin: 0;
     background-color: #52006A;
+    height: 100px;
 }
     #navbar{
         height: 10vw;
@@ -201,6 +202,7 @@ body{
             background-color:#FF7600;
             grid-column: 1 / 3;
             grid-row: 1 / 3 ;
+            
         }
 
         #im1{
@@ -208,6 +210,8 @@ body{
             background-color: #FF7600;
             grid-column: 3 / 4;
             grid-row: 1 / 2 ;
+            background-image: url("https://cronicaglobal.elespanol.com/uploads/s1/53/81/27/4/madcool.jpeg");
+            background-size: cover;
         }
 
         #im2{
@@ -215,6 +219,8 @@ body{
             background-color: #FF7600;
             grid-column: 4 / 5;
             grid-row: 1 / 2 ;
+            background-image: url("https://i.ytimg.com/vi/s0yD-UbcWfc/maxresdefault.jpg");
+            background-size: cover;
         }
 
         #im3{
@@ -222,6 +228,8 @@ body{
             background-color: #FF7600;
             grid-column: 3 / 4;
             grid-row: 2 / 3 ;
+            background-image: url("https://imagenes.heraldo.es/files/image_990_v3/uploads/imagenes/2019/07/13/el-postureo-reina-en-el-mad-cool-1.jpeg");
+            background-size: cover;
         }
 
         #im4{
@@ -229,6 +237,8 @@ body{
             background-color: #FF7600;
             grid-column: 4 / 5;
             grid-row: 2 / 3;
+            background-image: url("https://arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/M6NBTXID65RLUELIP6NFGKI4VA.jpg");
+            background-size: cover;
         }
 
 
@@ -237,6 +247,32 @@ body{
         border-top-right-radius: 5vw;
         height: 30vw;
         background-color: #CD113B;
+        width: 100%;
+    }
+
+
+        #finfo{
+            display: flex;
+            flex-direction: row;
+            
+        }
+            #fabout{
+                padding: 2vw;
+                width: 60%;
+            }
+            #patrocinadores{
+                padding: 2vw;
+                width: 40%;
+            }
+                #patrocinadores img{
+                    width: 10vw;            
+                }
+
+    hr{
+        color: #52006A;
+        background-color: #52006A;
+        height: 0.2vw;
+        border: none;
     }
 /*-----------------------------------DEFAULT-------------------------------------*/
 
