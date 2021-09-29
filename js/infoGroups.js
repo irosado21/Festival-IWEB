@@ -1,7 +1,7 @@
 /*DATOS*/
 
 var Groups = [["Twenty_One_Pilots", "10:00"],
-              ["Metallica", "10:00"]]
+              ["Imagine-Dragons", "10:00"]]
 
 var lorem = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias a ipsum, temporibus eligendi ab nostrum architecto cum totam libero deleniti labore nesciunt modi voluptatum sed ipsam dignissimos praesentium quo tempore."
 
