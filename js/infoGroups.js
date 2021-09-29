@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                                                      +          "<p>" + lorem + "</p>"
                                                      +      "</div>"
                                                      +      "<div class='timeGroup'>"
-                                                     +          element[1]
+                                                     +      "Show Info"    
                                                      +      "</div>"
                                                      +  "</div>"
 

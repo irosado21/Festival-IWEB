@@ -276,6 +276,7 @@ body{
 
 /*-----------------------------------CONTENT_X-------------------------------------*/
 .content_x{
+    position: relative;
     background-color: #CD113B;
     display: grid;
     grid-template-columns: auto 100px;
@@ -307,6 +308,9 @@ body{
 }
 
 .content_x button {
+    position: absolute;
+    bottom: 50px;
+
     visibility: hidden;
     margin: auto;
     padding: 20px 60px;
@@ -330,9 +334,8 @@ body{
 /*-----------------------------------CONTENT GRUPOS HORARIO-------------------------------------*/
 .content_x .timeGroup{
     background-color: #FF7600;
+    font-size: 0px;
     padding: 10px;
-    writing-mode: vertical-lr;
-    font-size: 50px;
     background-image: url(/img/barCode.png);
     background-size: cover;
 }
@@ -347,17 +350,46 @@ body{
 
 @media only screen and (max-width: 720px) {
     
+#content {
+    padding: 20px 50px;
+}
+
     .content_x{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto 25px;
+    }
+
+    .content_x .group{
+        padding-bottom: 30px;
     }
 
     .content_x p{
         display: none;
     }
 
+    .content_x button{
+        display: none;
+    }
+
+    .content_x .timeGroup{
+        display: block;
+        background-color: #FF7600;
+        background-image: none;
+        font-size: large;
+        padding: 0px;
+    }
+
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 500px) {
+
+    .content_x .group{
+        padding: 0px;
+    }
+
+    .content_x button{
+        display: none;
+    }
 
   }
 
