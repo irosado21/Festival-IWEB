@@ -262,30 +262,84 @@ body{
 
 /*-----------------------------------CONTENT-------------------------------------*/
 #content{
-    background-color: #CD113B;
+    background-color: #52006A;
     margin-top: 20px;
+    padding: 20px 100px;
 
     display: grid;
-    grid-template-columns: auto 200px;
-    padding: 5px;
+    row-gap: 25px;
+    grid-template-columns: auto;
     
 }
 /*-----------------------------------CONTENT-------------------------------------*/
 
+/*-----------------------------------CONTENT_X-------------------------------------*/
+.content_x{
+    width: auto;
+    background-color: #CD113B;
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: auto 100px;
+    
+}
+
+.content_x:hover>.group>button{
+    display: block;
+    bottom: 10px;
+}
+
+.content_x:hover>.group>p{
+    
+    display: none;
+
+}
+
+/*-----------------------------------CONTENT_X-------------------------------------*/
+
 
 /*-----------------------------------CONTENT LISTA GRUPOS-------------------------------------*/
-#content .listGrupos{
+.content_x .group{
     background-color: #CD113B;
-    max-height: 200px;
     display: grid;
+    border: 2px solid #FF7600;
+}
+
+.content_x img {
+    width: 100%;
+    max-height: 300px;
+}
+
+.content_x button {
+    display: none;
+    position: relative;
+    margin: auto;
+    padding: 20px 60px;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #FF7600;
+    color: white;
+    border: none;
+}
+
+.content_x button:hover {
+    opacity: 0.7;
+}
+
+.content_x p {
+    padding: 0px 50px;
 }
 /*-----------------------------------CONTENT LISTA GRUPOS-------------------------------------*/
 
 
 /*-----------------------------------CONTENT GRUPOS HORARIO-------------------------------------*/
-#content .timeGroup{
+.content_x .timeGroup{
     background-color: #FF7600;
     padding: 10px;
+    writing-mode: vertical-lr;
+    font-size: 50px;
+    background-image: url(/img/barCode.png);
+    background-size: cover;
 }
 /*-----------------------------------CONTENT GRUPOS HORARIO-------------------------------------*/
 
@@ -298,7 +352,13 @@ body{
 
 @media only screen and (max-width: 720px) {
     
+    .content_x p{
+        display: none;
+    }
 
+  }
+
+  @media only screen and (max-width: 320px) {
 
   }
 
