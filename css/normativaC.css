@@ -113,7 +113,8 @@ body{
         .bloque1 h2{
             text-align: center;
         }
-    
+        
+
     .bloque2{
         padding: 6%;
         margin-top: 15.5%;
@@ -149,13 +150,17 @@ body{
 @media (max-width: 1245px){
     .padre{
         grid-template-columns: 40% auto;
-        height: 1000px;
+        height: 750px;
     }
 
     .bloque1{
         margin-top: 22%;
         height: auto;
-        overflow-y:hidden;
+        overflow-y:scroll;
+    }
+
+    .bloque1::-webkit-scrollbar{
+        display: none;
     }
 }
 
