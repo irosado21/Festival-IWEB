@@ -267,31 +267,29 @@ body{
     padding: 20px 100px;
 
     display: grid;
-    row-gap: 25px;
-    grid-template-columns: auto;
+    row-gap: 50px;
+    grid-auto-rows: 1fr;
+    
     
 }
 /*-----------------------------------CONTENT-------------------------------------*/
 
 /*-----------------------------------CONTENT_X-------------------------------------*/
 .content_x{
-    width: auto;
+    position: relative;
     background-color: #CD113B;
-    margin-top: 20px;
-
     display: grid;
     grid-template-columns: auto 100px;
     
 }
 
 .content_x:hover>.group>button{
-    display: block;
-    bottom: 10px;
+    visibility: visible;
 }
 
 .content_x:hover>.group>p{
     
-    display: none;
+    visibility: hidden;
 
 }
 
@@ -307,12 +305,13 @@ body{
 
 .content_x img {
     width: 100%;
-    max-height: 300px;
 }
 
 .content_x button {
-    display: none;
-    position: relative;
+    position: absolute;
+    bottom: 50px;
+
+    visibility: hidden;
     margin: auto;
     padding: 20px 60px;
     font-size: large;
@@ -335,9 +334,8 @@ body{
 /*-----------------------------------CONTENT GRUPOS HORARIO-------------------------------------*/
 .content_x .timeGroup{
     background-color: #FF7600;
+    font-size: 0px;
     padding: 10px;
-    writing-mode: vertical-lr;
-    font-size: 50px;
     background-image: url(/img/barCode.png);
     background-size: cover;
 }
@@ -352,13 +350,46 @@ body{
 
 @media only screen and (max-width: 720px) {
     
+#content {
+    padding: 20px 50px;
+}
+
+    .content_x{
+        grid-template-columns: auto;
+        grid-template-rows: auto 25px;
+    }
+
+    .content_x .group{
+        padding-bottom: 30px;
+    }
+
     .content_x p{
         display: none;
     }
 
+    .content_x button{
+        display: none;
+    }
+
+    .content_x .timeGroup{
+        display: block;
+        background-color: #FF7600;
+        background-image: none;
+        font-size: large;
+        padding: 0px;
+    }
+
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 500px) {
+
+    .content_x .group{
+        padding: 0px;
+    }
+
+    .content_x button{
+        display: none;
+    }
 
   }
 

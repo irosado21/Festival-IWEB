@@ -1,35 +1,217 @@
 body{
     align-items: center;
     justify-content: center;
+    margin: 0;
+    background-color: #52006A;
 }
 
-/* header{
-    border: 2px black solid;
-    padding: 3%;
-    margin-top: 1%;
-    width: 50%;
-} */
 
+/* MENU DE NAVEGACION Y BANNER*/
+#navbar{
+    height: 10vw;
+    background-color: #CD113B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+    #navpop{
+        display: none;
+    }
+
+    .navbutton{
+        text-align: center;
+        height: 2vw;
+        width: auto;
+        color: #FFA900;
+        font-size: 1.8vw;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .navbutton:hover, .navbutton2:hover{
+        background-color: #52006A;
+        border-radius: 10vw;
+    }
+
+    .navbutton:hover, #logo:hover, .new, .navbutton2:hover, #navpop:hover{
+        cursor: pointer;
+    }
+
+    #logo{
+        border-radius: 10vw;           
+        height: 8vw;
+        width: 25vw;
+        background-color: #FF7600;
+    }
+
+        #logo img{
+            margin-left: 4%;
+            width: 90%;
+        }
+
+    #navbar2{
+        height: auto;
+        background-color:#CD113B;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        border-bottom-left-radius: 5vw;
+        border-bottom-right-radius: 5vw;
+        padding: 1vw;
+        display: none;
+    }
+
+        .navbutton2{
+            margin: 1vw;             
+            height: auto;
+            width: auto;
+            color: #FFA900;
+            font-size: 3vw;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    #carousel{
+        margin: 1vw;
+        background-color: #FF7600;
+        height: 30vw;
+        background-image: url("../img/Pagina_Principal/Banner\ de\ contacto.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+/* FIN DEL MENU DE NAVEGACION Y BANNER */
+
+/*BLOQUES DE CONTENIDO*/
 .padre{
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
+    grid-template-columns: 65% auto;
+    margin: 1%;
+    background-color: #CD113B;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: x-large;
 }
 
     .bloque1{
-        border: 2px black solid;
-        padding: 4%;
-        text-align: center;
+        padding: 3%;
+        text-align: left;
+        text-align: justify;
     }
-    
+
+        .bloque1 h2{
+            text-align: center;
+        }
+        
+
     .bloque2{
-        border: 2px black solid;
-        padding: 4%;
-        text-align: center;
+        padding: 6%;
+        margin-top: 15.5%;
+        text-align: left;
     }
+
+        .bloque2 a{
+            color: #FFA900;
+        }
+/* FIN DE LOS BLOQUES DE CONTENIDO */
+
+/* TEMA DEL MAPA */
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_iframe {
+    height: 400px !important;
+}
+/*FIN DEL MAPA*/
+
+/* MEDIA PARA QUE SEA RESPONSIVE Y TODO SE VEA BIEN CUANDO SE REDUCE*/
+@media (max-width: 1245px){
+    .padre{
+        grid-template-columns: 40% auto;
+        height: 750px;
+    }
+
+    .bloque1{
+        margin-top: 22%;
+        height: auto;
+        overflow-y:scroll;
+    }
+
+    .bloque1::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+
 
 @media (max-width: 720px){
     .padre{
         grid-template-columns: auto;
+        height: 975px;
     } 
+
+    .bloque1{
+        margin-top: 5%;
+        height: 85%;
+    }
+
+    .bloque2{
+        margin-top: 15%;
+        padding-top: 0%;
+    }
+
+    #navbar2{
+        display: none;    
+    }
+    
+    .navbutton{
+        display: none;
+    }
+
+    #navbar{
+        padding: 2vw;
+        justify-content:space-between ;
+    }
+
+    #navpop{
+        display: initial;
+    }
+
+    .pop{
+        width: 7vw;
+        height: 1vw;
+        background-color: black;
+        margin: 1vw 0;
+    }
 }
+/* FIN DE LOS MEDIA */
+
+/* BLOQUE PARA EL MENU PEQUEÑO */
+@media (min-width: 721px) {
+    #navbar2 {
+        display: none !important;
+    }
+}
+/* FIN DEL MENU PEQUEÑO */
