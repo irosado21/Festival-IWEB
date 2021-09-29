@@ -149,8 +149,16 @@ body{
 @media (max-width: 1245px){
     .padre{
         grid-template-columns: 40% auto;
+        height: 1000px;
+    }
+
+    .bloque1{
+        margin-top: 22%;
+        height: auto;
+        overflow-y:hidden;
     }
 }
+
 
 
 @media (max-width: 720px){
