@@ -153,6 +153,14 @@ body{
             background-color:#FFA900;
         }
 
+        .new h2{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            background-color: #cd113a65;
+            font-size: 1.8vw;
+        }
+
         #new1{
             background-image: url("https://madcoolfestival.es/images/noticias/no_139_thumb.jpg");
             background-size: cover;
@@ -435,6 +443,14 @@ body{
         #patrocinadores{
             padding: 1vw;
             width: auto;
+        }
+
+        .new h2{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            background-color: #cd113a65;
+            font-size: 2.5vw;
         }
 
 }
