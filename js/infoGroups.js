@@ -13,10 +13,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     Groups.forEach(function (element,i) {
         
-        document.getElementById("content").innerHTML += "<div class='content_x'>"
+        document.getElementById("content").innerHTML += "<div class='content_x' data-group='" + element[0] + "'>"
                                                      +      "<div class='group'>"
                                                      +          "<img src='/img/Grupos/" + element[0] + ".png' alt='Imagen del Grupo'>"
-                                                     +          "<button onclick='showInfo()'>Show Info</button>"
+                                                     +          "<button onclick='showInfo(`" + element[0] + "`)'>Show Info</button>"
                                                      +          "<p>" + lorem + "</p>"
                                                      +      "</div>"
                                                      +      "<div class='timeGroup'>"
@@ -30,5 +30,23 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 /* INICIO GENERADOR FIN */
 
+/* NAVBAR */
+function pop() {
+  if (document.getElementById("navbar2").style.display=="block") {
+      document.getElementById("navbar2").style.display="none";
+  }else{
+      document.getElementById("navbar2").style.display="block";
+      document.getElementById("navbar").style.borderRadius=0;
+  }   
+}
+/* NAVBAR FIN */
 
-
+function showInfo(group){
+  Array.from(document.getElementById("content").children).forEach(element => {
+    if (element.dataset.group == group) {
+      element.innerHTML += "<div class='hiddenInfo'>"
+                        +  ""
+    }
+  });
+    
+}
