@@ -42,7 +42,7 @@ function pop() {
 /* NAVBAR FIN */
 
 function showInfo(group){
-
+  /*
   Array.from(document.getElementById("content").children).forEach(element => {
     if (element.dataset.group == group) {
       //Esta ubicado en su grupo
@@ -51,7 +51,7 @@ function showInfo(group){
         document.getElementById("hiddenInfo").parentNode.removeChild(document.getElementById("hiddenInfo"));
       } else {
         element.innerHTML += "<div id='hiddenInfo'>"
-                          +  "Hola"
+                          +  "<h2>Horario: </h2>"
                           +  "</div>"
       }  
 
@@ -60,5 +60,5 @@ function showInfo(group){
 
     }
   });
-    
+  */
 }
