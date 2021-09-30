@@ -42,13 +42,25 @@ function pop() {
 /* NAVBAR FIN */
 
 function showInfo(group){
+  /*
   Array.from(document.getElementById("content").children).forEach(element => {
     if (element.dataset.group == group) {
-      element.innerHTML += "<div class='hiddenInfo'>"
-                        +  ""
+      //Esta ubicado en su grupo
+      if (document.getElementById("hiddenInfo") !== null) {
+        console.log(1);
+        document.getElementById("hiddenInfo").parentNode.removeChild(document.getElementById("hiddenInfo"));
+      } else {
+        element.innerHTML += "<div id='hiddenInfo'>"
+                          +  "<h2>Horario: </h2>"
+                          +  "</div>"
+      }  
+
+      
+
+
     }
   });
-    
+  */
 }
 
 
